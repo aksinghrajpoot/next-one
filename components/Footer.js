@@ -5,7 +5,7 @@ export default function Footer() {
 
 <footer className="py-8">
         <div className="mycontainer">
-        <div className="right text-center font-medium text-[#222222]">Made in ❤️ by A K Singh</div>
+        <div className="text-base text-center font-medium text-[#222222]">Made in ❤️ by A K Singh</div>
           </div>
       </footer>
   </>
