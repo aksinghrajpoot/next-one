@@ -100,7 +100,7 @@ export default function Home() {
       </section>
       <section className="feedback py-10 md:py-20">
         <div className="mycontainer grid grid-cols-1 md:grid-cols-2">
-          <div className="left p-4 order-lasr">
+          <div className="left p-4 md:order-last">
             <img src="images/left-3.svg" className="w-[90%] md:w-[100%] mx-auto" alt="" />
           </div>
           <div className="right py-6 md:p-12 items-center">
