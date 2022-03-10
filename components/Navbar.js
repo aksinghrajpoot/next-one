@@ -16,8 +16,8 @@ export default function Navbar() {
         <Image className="cursor-pointer" width={35} height={30} src='/logo.png'/>
         </Link>
       </div>
-      <div className="right">
-        <ul className="flex space-x-4 font-medium">
+      <div className="right" id='navbar'>
+        <ul className=" md:flex space-y-2 md:space-y-0 md:space-x-4 font-medium">
           <li><Link href='/'>Home</Link></li>
           <li><Link href='/about'>About</Link></li>
           <li><Link href='/contact'>Contact</Link></li>
@@ -25,6 +25,11 @@ export default function Navbar() {
           <li><Link href='/gallery'>Gallery</Link></li>
         </ul>
       </div>
+      <button className="space-y-1 md:hidden cursor-pointer navtoggle">
+        <span className="h-0.5 bg-black w-6 relative block"></span>
+        <span className="h-0.5 bg-black w-6 relative block"></span>
+        <span className="h-0.5 bg-black w-6 relative block"></span>
+      </button>
     </nav>
     </div>
   </>
