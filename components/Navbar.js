@@ -15,7 +15,7 @@ export default function Navbar() {
         <Image className="cursor-pointer" width={35} height={30} src='/logo.png'/>
         </Link>
       </div>
-    <input id="menu__toggle" type="checkbox" />
+    <input id="menu__toggle" type="checkbox" className="invisible" />
     <label class="menu__btn" for="menu__toggle">
       <span></span>
     </label>
