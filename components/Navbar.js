@@ -4,7 +4,6 @@ import Head from "next/head"
 export default function Navbar() {
   return <>
 <Head>
-  
 <link rel='icon' href='logo.png' />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -16,6 +15,10 @@ export default function Navbar() {
         <Image className="cursor-pointer" width={35} height={30} src='/logo.png'/>
         </Link>
       </div>
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
       <div className="right" id='navbar'>
         <ul className=" md:flex space-y-2 md:space-y-0 md:space-x-4 font-medium">
           <li><Link href='/'>Home</Link></li>
@@ -25,11 +28,6 @@ export default function Navbar() {
           <li><Link href='/gallery'>Gallery</Link></li>
         </ul>
       </div>
-      <button className="space-y-1 md:hidden cursor-pointer navtoggle">
-        <span className="h-0.5 bg-black w-6 relative block"></span>
-        <span className="h-0.5 bg-black w-6 relative block"></span>
-        <span className="h-0.5 bg-black w-6 relative block"></span>
-      </button>
     </nav>
     </div>
   </>
